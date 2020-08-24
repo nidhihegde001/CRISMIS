@@ -7,9 +7,8 @@ There are 2 parts of this project:
   1. For tool:
   2. For Training:
   
-3. To use the tool, download the 2 pre-trained models ```rpn_99.pth``` and ```classifier_final.pth``` and place it in the main directory of this repository. The link to the models is :
-
-
+3. To use the tool, download the 2 pre-trained models ```rpn_99.pth``` and ```classifier_final.pth``` and place it in the main directory of this repo. The link to the models is
+https://drive.google.com/drive/folders/18ciTnhn0-aSIqPd5NrWT6mfCpEI0Nat4?usp=sharing
   
 ## Usage
 
@@ -28,8 +27,7 @@ There are 2 parts of this project:
  <img src="README_samples/found.PNG" width="256" height="256">
  
 This result will be stored in a sub-directory called ```predictions/``` if a cosmic ray is found. If the cosmic ray is not found as in an example below, the following message is displayed: 
-<img src="README_samples/not_found.PNG" width="300" height="50">
- 
+``` Cosmic Ray not Found```
  In all the cases, for every image tested, the corresponding image gets stored in a directory ```images/``` 
  
  
