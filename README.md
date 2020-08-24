@@ -24,11 +24,11 @@ There are 2 parts of this project:
     python tool.py --directory 2014_215 --name EN1049375684M.IMG
  ```
  The result looks like this:
- <img src="README_samples/found.PNG" width="200" height="200">
  
-This result will be stored in a sub-directory called ```predictions/``` if a cosmic ray is found. If the cosmic ray is not found as in an example below, the following message is displayed:
-
-<img src="README_samples/found.PNG" width="300" height="50">
+ <img src="README_samples/found.PNG" width="256" height="256">
+ 
+This result will be stored in a sub-directory called ```predictions/``` if a cosmic ray is found. If the cosmic ray is not found as in an example below, the following message is displayed: 
+<img src="README_samples/not_found.PNG" width="300" height="50">
  
  In all the cases, for every image tested, the corresponding image gets stored in a directory ```images/``` 
  
