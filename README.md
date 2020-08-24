@@ -7,6 +7,10 @@ There are 2 parts of this project:
   1. For tool:
   2. For Training:
   
+3. To use the tool, download the 2 pre-trained models ```rpn_99.pth``` and ```classifier_final.pth``` and place it in the main directory of this repository. The link to the models is :
+
+
+  
 ## Usage
 
 ### Tool:
@@ -17,11 +21,13 @@ There are 2 parts of this project:
     *  ``` --name``` name of the image in directory
 4.  A typical example looks like this:
 ``` cd tool 
-    python tool.py --directory 2011_207 --name EN0220155320M.IMG
+    python tool.py --directory 2014_215 --name EN1049375684M.IMG
  ```
  The result looks like this:
+ ![Test Image 1](/README_samples/found.PNG)
  
 This result will be stored in a sub-directory called ```predictions/``` if a cosmic ray is found. If the cosmic ray is not found as in an example below, the following message is displayed:
+ ![Test Image 2](/README_samples/not_found.PNG)
  
  In all the cases, for every image tested, the corresponding image gets stored in a directory ```images/``` 
  
