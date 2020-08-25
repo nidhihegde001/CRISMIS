@@ -1,9 +1,11 @@
 # CRISMIS - Google Summer of Code 2020 (CERN)
-_____
+
 CRISMIS is an open-source machine learning based tool to identify cosmic-ray artifacts in imaging data.
 Its purpose is to cater to the needs of planetary scientists and space science teams and help them to automatically filter, and search for the presence of a cosmic ray artefact in their data.
+
 In addition to this, it also provides the flexibility to train on your own data. 
 ## Installation
+_____
 1. Clone this repo
 2. Install the following packages in your environment:
    * Pytorch 1.6.0, cudatoolkit 10.1, torchvision (refer : https://pytorch.org/)
@@ -16,6 +18,7 @@ In addition to this, it also provides the flexibility to train on your own data.
    * https://drive.google.com/drive/folders/18ciTnhn0-aSIqPd5NrWT6mfCpEI0Nat4?usp=sharing
   
 ## Usage:
+_____
 ### Tool:
 1. To use the tool, first follow the Installation steps above.
 1. Type ```python tool.py``` with the required arguments
@@ -47,6 +50,7 @@ If the cosmic ray is not found as in an example below, the following message is 
  5. The training script saves the model after every 20 epochs in the directory ```saved_models/exp_no``` where 'exp_no' is the experiment number.
  6. Along with the saved models, 3 graphs are generated corresponding to classification, regression and total losses during training and validation.
  7. For visualization of the trained model, the script ```visualize.py``` is provided.
+ 
 ### Notebooks
 The work has also been distributed to the following notebooks for easy use:
 
