@@ -153,7 +153,7 @@ def train_model(model, focal_loss, start_epoch = 0, num_epochs=25, exp = 1, use_
 
           
       print()
-  save_loss_graphs(cls_loss_values,reg_loss_values,tot_loss_values,val_cls_loss_values,val_reg_loss_values,val_tot_loss_values,start_epoch,num_epochs)
+  save_loss_graphs(cls_loss_values,reg_loss_values,tot_loss_values,val_cls_loss_values,val_reg_loss_values,val_tot_loss_values,start_epoch,num_epochs, exp)
   time_elapsed = time.time() - since
   print('Training complete in {:.0f}m {:.0f}s'.format(
       time_elapsed // 60, time_elapsed % 60))
