@@ -1,6 +1,8 @@
-# CRISMIS
-This project is a part of Google Summer of Code 2020 for CERN
-
+# CRISMIS - Google Summer of Code 2020 (CERN)
+_____
+CRISMIS is an open-source machine learning based tool to identify cosmic-ray artifacts in imaging data.
+Its purpose is to cater to the needs of planetary scientists and space science teams and help them to automatically filter, and search for the presence of a cosmic ray artefact in their data.
+In addition to this, it also provides the flexibility to train on your own data. 
 ## Installation
 1. Clone this repo
 2. Install the following packages in your environment:
