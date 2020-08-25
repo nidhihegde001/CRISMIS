@@ -4,7 +4,15 @@ There are 2 parts of this project:
 ## Installation
 1. Clone this repo
 2. Install the following packages:
-  1. For tool:
+  1. For tool: 
+  * For pytorch 1.6.0, cudatoolkit 10.1 , torchvision   refer : https://pytorch.org/
+  ```pip install torch 
+     pip install torchvision ```
+  
+  * planetaryimage 0.5.0 ```pip install planetaryimage```
+  * requests 2.7 ```pip install requests==2.7.0```
+  * Astropy 4.0 ```pip install astropy```, scipy 1.4 ```pip install scipy```
+  * Matplotlib 
   2. For Training:
   
 3. To use the tool, download the 2 pre-trained models ```rpn_99.pth``` and ```classifier_final.pth``` and place it in the main directory of this repo. The link to the models is:
@@ -48,12 +56,9 @@ Every image tested also gets stored in a directory ```images/```
 
 ## Notebooks
 The work has been divided into the following notebooks for easy use:
+
 ```scanner.ipynb``` Contains utilities for easy retrieval of data from the MESSENGER archive, a GUI for sorting the images based on visual inspection, and a scanner to scan the  images for cosmic ray artefacts from a list of dates from the archive.
 
 ```artefacts_library.ipynb``` Pre-processing of predictions at the rpn stage to help in creation of different classes of data for the classifier stage
 
 ```RPN_R50_notebook.ipynb```  The training script contained in the ```rpn/``` folder has been converted into the form of a notebook, for step by step training and visualisation.
-
-
-
-
