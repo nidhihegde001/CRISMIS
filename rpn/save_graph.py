@@ -3,7 +3,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-def save_loss_graphs(t_c, t_r, t_tot, v_c, v_r, v_tot, start_epoch, no_epochs):
+def save_loss_graphs(t_c, t_r, t_tot, v_c, v_r, v_tot, start_epoch, no_epochs, exp):
   x = np.arange(start_epoch, start_epoch + no_epochs, 1)
   graphs = ['Classification', 'Regression', 'Total']
   train = [t_c, t_r, t_tot]
@@ -23,6 +23,6 @@ def save_loss_graphs(t_c, t_r, t_tot, v_c, v_r, v_tot, start_epoch, no_epochs):
   # show a legend on the plot
     plt.legend()
   # Display a figure.
-    plt.savefig('saved_models/'+ +str(exp)+ graphs[i] +'Loss.png')
+    plt.savefig('saved_models/'+ str(exp)+ graphs[i] +'Loss.png')
     plt.show()
     
