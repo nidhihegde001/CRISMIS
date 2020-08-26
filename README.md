@@ -30,7 +30,7 @@ In addition to this, it also provides the flexibility to train on your own data.
  ```
  The result looks like this:
  
- <img src="README_samples/found.PNG" width="256" height="256">
+ <img src="README_samples/found.PNG" width="256" height="256" align="center">
  
 Every tested image is stored in the ```images/``` subdirectory and its result is stored in ```prediction/``` if a cosmic ray is found.
 If the cosmic ray is not found as in an example below, the following message is displayed: 
