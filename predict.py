@@ -19,15 +19,6 @@ transforms_cls = transforms.Compose(
     ])
 
 
-'''
-    Returns
-    -------
-    cr_image : numpy array
-               The cosmic ray mask for the input image (0-background pixel, 255-cosmic ray pixel)
-    ncosmics_tot : int
-                Total number of cosmic ray pixels in the image
-'''
-
 def Show_Final_Predictions(img_tensor,img_PIL, name, rpn_model, classifier_model):
   with torch.no_grad():
     rois, scores = Final_Proposals(img_tensor, name, rpn_model)
