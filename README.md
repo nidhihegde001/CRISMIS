@@ -30,11 +30,10 @@ In addition to this, it also provides the flexibility to train on your own data.
  ```
  The result looks like this:
  
- <img src="README_samples/found.PNG" width="256" height="256" align="center">
+ <img src="README_samples/found.PNG" width="256" height="256">
  
 Every tested image is stored in the ```images/``` subdirectory and its result is stored in ```prediction/``` if a cosmic ray is found.
-If the cosmic ray is not found as in an example below, the following message is displayed: 
-``` Cosmic Ray not Found```
+If the cosmic ray is not found, the message ``` Cosmic Ray not Found``` is displayed: 
  
  ### Training Script:
  1. In case you want to train the RPN model yourself on a different dataset, you may use the training script provided in the directory ```rpn/```
