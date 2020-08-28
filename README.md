@@ -13,6 +13,7 @@ In addition to this, it also provides the flexibility to train on your own data.
    * requests 2.7 ```pip install requests```
    * Astropy 4.0 ```pip install astropy```, Scipy 1.4 ```pip install scipy```
    * Matplotlib ```python -m pip install -U matplotlib```
+   * Tqdm ```pip install tqdm```
   
 3. To use the tool, download the 2 pre-trained models ```rpn_99.pth``` and ```classifier_final.pth``` and place it in the main directory of this repo. The link to the models is:
    * https://drive.google.com/drive/folders/18ciTnhn0-aSIqPd5NrWT6mfCpEI0Nat4?usp=sharing
@@ -32,8 +33,8 @@ In addition to this, it also provides the flexibility to train on your own data.
  
  <img src="README_samples/found.PNG" width="256" height="256">
  
-Every tested image is stored in the ```images/``` subdirectory and its result is stored in ```prediction/``` if a cosmic ray is found.
-If the cosmic ray is not found, the message ``` Cosmic Ray not Found``` is displayed: 
+Every tested image is stored in the ```images/``` subdirectory and its result is stored in the directory```prediction/```, if a cosmic ray is found.
+If the cosmic ray is not found, the message ``` Cosmic Ray not Found``` is displayed.
  
  ### Training Script:
  1. In case you want to train the RPN model yourself on a different dataset, you may use the training script provided in the directory ```rpn/```
@@ -61,3 +62,5 @@ The work has also been distributed to the following notebooks for easy use:
 ```artefacts_library.ipynb``` Pre-processing of predictions at the rpn stage to help in creation of different classes of data for the classifier stage
 
 ```RPN_R50_notebook.ipynb```  The training script contained in the ```rpn/``` folder has been converted into the form of a notebook, for step by step training and visualisation.
+
+```classifier_Net.ipynb```  A notebook containing the implementation of the classifier trained on crops of different artifacts
